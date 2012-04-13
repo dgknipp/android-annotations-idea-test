@@ -1,6 +1,7 @@
 package net.ealden;
 
 import android.app.Activity;
+import android.util.Log;
 import android.widget.EditText;
 import android.widget.TextView;
 import com.googlecode.androidannotations.annotations.Click;
@@ -19,5 +20,11 @@ public class AndroidAnnotationsIdeaActivity extends Activity {
     void myButton() {
         String name = myInput.getText().toString();
         textView.setText("Hello " + name);
+    }
+
+    @Click
+    void subActivityButton() {
+        Log.d("AndroidAnnotationsIdeaActivity", "Starting AndroidAnnotationsIdeaSubActivity");
+        AndroidAnnotationsIdeaSubActivity_.intent(this).start();
     }
 }

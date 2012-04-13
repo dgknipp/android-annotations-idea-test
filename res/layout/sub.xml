@@ -6,17 +6,10 @@
     <EditText android:id="@+id/myInput"
               android:layout_width="fill_parent"
               android:layout_height="wrap_content"/>
-
     <Button android:id="@+id/myButton"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="Click me!"/>
-
-    <Button android:id="@+id/subActivityButton"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Go to sub activity >"/>
-
     <TextView android:id="@+id/myTextView"
               android:layout_width="fill_parent"
               android:layout_height="wrap_content"/>
